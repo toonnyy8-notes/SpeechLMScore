@@ -77,7 +77,7 @@ Nevertheless, **the Scarcity of Data** due to the high collection cost makes **t
 
 This study refers to the unsupervised evaluation metrics of NLG and proposes SpeechLMScore.
 
-Unlike past subjective score estimation methods, human scoring markers are not required when training the scoring model.
+Unlike past subjective score estimation methods, human scoring labels are not required when training the scoring model.
 
 </p>
 
