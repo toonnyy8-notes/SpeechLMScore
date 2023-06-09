@@ -71,7 +71,7 @@ Subjective Score Estimation
 <p class="text-xl">
 
 
-In order to truly replace manual evaluation, many recent studies have collected **Speech and Corresponding Subjective Scores** to train scoring models.
+In order to truly replace human evaluation, many recent studies have collected **Speech and Corresponding Subjective Scores** to train scoring models.
 
 Nevertheless, **the Scarcity of Data** due to the high collection cost makes **the Generalization Ability** of these supervised models **Need to be Improved**.
 
