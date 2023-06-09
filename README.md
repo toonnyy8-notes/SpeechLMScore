@@ -1,7 +1,11 @@
-# SpeechLMScore: Evaluating speech generation using speech language model
-Soumi Maiti $^1$, Yifan Peng $^1$, Takaaki Saeki $^{1,2}$, Shinji Watanabe $^1$
+# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
 
-$^1$ Carnegie Mellon University, $^2$ The University of Tokyo
+To start the slide show:
 
-## Introduction
+- `npm install`
+- `npm run dev`
+- visit http://localhost:3030
 
+Edit the [slides.md](./slides.md) to see the changes.
+
+Learn more about Slidev on [documentations](https://sli.dev/).

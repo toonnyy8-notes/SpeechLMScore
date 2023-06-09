@@ -1,0 +1,108 @@
+---
+# try also 'default' to start simple
+theme: seriph
+# random image from a curated Unsplash collection by Anthony
+# like them? see https://unsplash.com/collections/94734566/slidev
+background: https://source.unsplash.com/collection/94734566/1920x1080
+# apply any windi css classes to the current slide
+class: 'text-center'
+# https://sli.dev/custom/highlighters.html
+highlighter: shiki
+# show line numbers in code blocks
+lineNumbers: false
+# some information about the slides, markdown enabled
+info: |
+  ## Slidev Starter Template
+  Presentation slides for developers.
+
+  Learn more at [Sli.dev](https://sli.dev)
+# persist drawings in exports and build
+drawings:
+  persist: false
+# page transition
+transition: slide-left
+# use UnoCSS
+css: unocss
+---
+
+# SpeechLMScore
+## Evaluating Speech Generation using Speech Language Model
+Soumi Maiti$^1$, Yifan Peng$^1$, Takaaki Saeki$^{1,2}$, Shinji Watanabe$^1$
+
+$^1$Carnegie Mellon University, $^2$The University of Tokyo
+
+## ICASSP 2023
+
+---
+
+## Introduction
+
+<p class="text-xl">
+
+When evaluating **Speech Generation** and **Speech Enhancement** tasks, **Human Subjective Evaluation** is often relied on.  
+
+However, subjective evaluation is **Time-Consuming and Expensive**, so there are many automatic evaluation methods used to replace humans to evaluate various characteristics of speech.  
+
+However, objective evaluation, although convenient and fast, does **NOT** show a **high correlation** with human evaluation scores.  
+
+</p>
+
+<style>
+h2 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+--- 
+
+為了解決人工評測的不便性，近來有些研究收集了語音與其相對的主觀評分，
+並將其視為回歸任務來訓練評分模型，但是資料的收集成本高昂導致的稀缺性，
+使這些監督式模型的泛化能力有待提升。
+
+而在自然語言生成任務上，有許多使用非監督式模型執行自動評估的方法，
+這些方法跟傳統自動評測不同，與人工評測的相關性更高。 
+
+---
+
+近期，有許多自監督方法將語音編碼成離散單元，
+本研究結合了語音離散語音單元，並設計了新的非監督式評估方法，
+- 無監督學習
+- 不需要參考語音
+
+---
+
+## Method
+
+$\mathbf{Tok(x)} = \mathbf{d} = \left[ d_1,\ldots,d_T \right], d_i=\{1,\ldots,V\}$
+
+$\text{SpeechLMScore}(\mathbf{d}|\theta)=\cfrac{1}{T} \sum_{t} \log p(d_t | d_{\lt t}, \theta)$
+
+### Speech Language Model
+
+---
+
+## VoiceMOS 2022 Challenge
+收集來自 Blizzard Challenges (BC), Voice Conversion Challenges (VCC), ESPnet-TTS 中，由 187 種語音合成系統生成的合成語音與自然語音共的 7106 句，每個筆語音由 8 名聽眾使用 1~5 分進行自然度評估。
+
+---
+
+## Expriments
+
+<img class="w-1/2" src="/img/tab1.png" />
+
+---
+
+<img src="/img/tab2.png" />
+
+---
+
+## Conclusions
+本論文參考 NLG 的非監督評估方法，提出了 SpeechLMScore，無需收集大量的主觀評分資料就能比以往的監督式方法更貼近人類評分標準。
+
+
