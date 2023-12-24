@@ -23,6 +23,9 @@ drawings:
 transition: slide-left
 # use UnoCSS
 css: unocss
+title: SpeechLMScore
+mdc: true
+download: true
 ---
 
 # SpeechLMScore
