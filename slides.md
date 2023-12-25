@@ -28,7 +28,7 @@ mdc: true
 download: true
 ---
 
-# SpeechLMScore
+# [SpeechLMScore](https://ieeexplore.ieee.org/abstract/document/10095710)
 ## Evaluating Speech Generation using Speech Language Model
 Soumi Maiti$^1$, Yifan Peng$^1$, Takaaki Saeki$^{1,2}$, Shinji Watanabe$^1$
 
