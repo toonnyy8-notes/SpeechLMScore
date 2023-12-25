@@ -1,1 +1,1 @@
-# [SpeechLMScore 論文筆記](https://toonnyy8-notes.github.io/SpeechLMScore/dist/)
+# [SpeechLMScore 論文筆記](https://toonnyy8-notes.github.io/SpeechLMScore/)
